@@ -39,7 +39,7 @@ function VoiceAssist() {
     useEffect(()=>{
         if(transcript && !listening){
             callGpt3(transcript).then((response)=>{
-                
+                const synth = window.speechSynthesis;
                 const utterance = new SpeechSynthesisUtterance(response);
                 synth.speak(utterance);
                 setAitext(response);
