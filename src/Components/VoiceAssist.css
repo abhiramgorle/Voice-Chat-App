@@ -1,0 +1,39 @@
+p{
+    font-size: 1.5em;
+    font-weight: bold;
+    color:  linear-gradient(to right, #00f, #00a);
+    text-align: center;
+}
+.voiceassist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.MIC{
+    border-radius: 50%;
+    height: 10rem;
+    align-items: center;
+    
+}
+
+.MIC:hover{
+    background: radial-gradient(circle, #00f, #00a);
+    animation: ripple 1000ms infinite;
+}
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0px #4444ee, 0 0 0 0px #fff, 
+      0 0 0 0px #4444ee, 0 0 0 0px #fff, 
+      0 0 0 0px #4444ee, 0 0 0 0px #fff, 
+      0 0 0 0px #4444ee, 0 0 0 0px #fff;
+    }
+    100% {
+      box-shadow: 0 0 0 15px #4444ee, 0 0 0 17px rgba(255,255,255,0), 
+      0 0 0 10px #4444ee, 0 0 0 12px rgba(255,255,255,0), 
+      0 0 0 20px #4444ee, 0 0 0 22px rgba(255,255,255,0), 
+      0 0 0 35px #4444ee, 0 0 0 37px rgba(255,255,255,0);
+    }
+  }
